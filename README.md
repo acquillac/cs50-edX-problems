@@ -6,3 +6,4 @@
 
 ## Problem Set 1
 * Create mario pyramid in C
+* Greedy Algorithms

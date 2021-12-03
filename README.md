@@ -13,4 +13,4 @@
 * Luhn’s Algorithm
 
 ## Problem Set 2
-* Readibility
+* Readability

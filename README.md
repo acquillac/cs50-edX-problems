@@ -15,3 +15,4 @@
 ## Problem Set 2
 * Readability
 * Caesar
+* Substitution

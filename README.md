@@ -16,3 +16,7 @@
 * Readability
 * Caesar
 * Substitution
+
+## Problem Set 3
+* Plurality
+* Runoff

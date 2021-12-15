@@ -4,6 +4,7 @@
 * Hello
 * Population
 * Scrabble
+* Volume
 
 ## Problem Set 0
 * Create a game in Scratch

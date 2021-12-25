@@ -25,3 +25,6 @@
 ## Problem Set 4
 * Filter 
 * Recovery
+
+## Problem Set 5
+* Speller

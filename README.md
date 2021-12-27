@@ -32,3 +32,6 @@
 ## Problem Set 6
 * Hello
 * Mario
+* cash
+* readability
+* DNA

@@ -28,3 +28,7 @@
 
 ## Problem Set 5
 * Speller
+
+## Problem Set 6
+* Hello
+* Mario

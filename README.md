@@ -35,3 +35,5 @@
 * cash
 * readability
 * DNA
+## Problem Set 7
+* movies

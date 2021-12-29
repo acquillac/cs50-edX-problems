@@ -1,0 +1,1 @@
+SELECT birth FROM people WHERE name = (SELECT name FROM people WHERE name = 'Emma Stone');

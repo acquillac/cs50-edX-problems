@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <div>
+                    <div class="question">
+                        <ul class="question-list">
+                            <li><button class="correct">Rockstar Games</button></li>
+                            <li><button class="incorrect">Bungie</button></li>
+                            <li><button class="incorrect">Bethesda Softworks</button></li>
+                        </ul>
+                        <h3>Which Game Studio made Grand Theft Auto</h3>
+                    </div>
+                    <div class="question">
+                        <ul class="question-list">
+                            <li ><button class="incorrect">13</button></li>
+                            <li><button class="incorrect">7</button></li>
+                            <li><button class="correct">16</button></li>
+                        </ul>
+                        <h3>How many Grand Theft Autos games are there?</h3>
+                    </div>
+                    <div class="question">
+                        <ul class="question-list">
+                            <li><button class="incorrect">GTA 3</button></li>
+                            <li><button class="correct">GTA 5</button></li>
+                            <li><button class="incorrect">GTA Vice City</button></li>
+                        </ul>
+                        <h3>What is the most popular Grand Theft Auto game?</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- free response question here -->
+                <h3 class="free">What was the first video game made? <i>Hint: its not Pong</i></h3>
+                <form>
+                    <!--Computer Space-->
+                    <input class="answer" type="text" placeholder="First video game ever made" value="">
+                    <button class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+        <script>
+            // Part One
+            // Declaring variables
+            const allcor = document.querySelectorAll(".correct");
+            const allincor = document.querySelectorAll(".incorrect");
+
+            // change background color and append correct under question
+            allcor.forEach(function (item){
+                item.addEventListener("click", e=>{
+                    item.style.background = "green";
+                    let target = event.target;
+                    let container = target.parentElement.parentElement.parentElement;
+                    let p = document.createElement("p");
+                    p.innerHTML = "Correct!";p.innerHTML = "Correct!";
+                    container.append(p);
+                });
+            });
+
+            // change background color and append incorrect under question
+            allincor.forEach(function (item){
+                item.addEventListener("click", e=>{
+                    item.style.background = "red";
+                    let target = event.target;
+                    let container = target.parentElement.parentElement.parentElement;
+                    let p = document.createElement("p");
+                    p.innerHTML = "Incorrect";
+                    container.append(p);
+                });
+            });
+
+
+            // Part Two
+            // declaring variables
+            let submitbtn = document.querySelector(".submit-btn");
+            let answer = document.querySelector(".answer");
+            let freeq = document.querySelector(".free");
+
+            submitbtn.addEventListener("click", e=>{
+                e.preventDefault();
+                let currentanswer = answer.value;
+                currentanswer = currentanswer.trim();
+                currentanswer = currentanswer.toLowerCase();
+
+                if (currentanswer === "computer space" || currentanswer === "computerspace")
+                {
+                    answer.style.background = "green";
+                    let p = document.createElement("p");
+                    p.innerHTML = "Correct!";
+                    freeq.appendChild(p);
+                }
+                else
+                {
+                    answer.style.background = "red";
+                    let p = document.createElement("p");
+                    p.innerHTML = "Incorrect";
+                    freeq.appendChild(p);
+                }
+            });
+        </script>
+
+    </body>
+</html>

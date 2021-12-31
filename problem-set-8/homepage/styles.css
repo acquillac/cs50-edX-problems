@@ -1,0 +1,39 @@
+.products, .home, .about, .contact
+{
+    background: linear-gradient(  #d5d8dc , #566573);
+}
+
+.lineargr
+{
+    background: linear-gradient(  #d5d8dc , #566573);
+    border-radius: 5px;
+}
+
+.products-img
+{
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.test-img
+{
+    border-radius: 50%;
+}
+
+.border-1
+{
+    border: 1px solid #566573;
+    border-radius: 5px;
+}
+
+.item-image
+{
+    height:200px;
+    width:100%;
+}
+
+.item-bg
+{
+    background: #abb2b9;
+}
